@@ -27,11 +27,11 @@ model.load_state_dict(model_state)
 model.eval()
 
 bot_name = "EcoloGPT"
-print("Bonjour. Je suis EcoloGPT, celui qui répondra à toutes tes questions sur l'écologie ! Lançons une conversation !(type 'quit' to exit)")
+print("Bonjour. Je suis EcoloGPT, celui qui répondra à toutes tes questions sur l'écologie ! Lançons une conversation !(tappez 'Aurevoir' pour terminer la conversation)")
 while True:
     # sentence = "do you use credit cards?"
     sentence = input("Vous: ")
-    if sentence == "quit":
+    if sentence == "Aurevoir" or sentence == "A bientot !":
         break
     detected_language = detect(sentence)
     sentence = tokenize(sentence, language=detected_language)

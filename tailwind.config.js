@@ -10,13 +10,19 @@ export default {
         './resources/js/**/*.jsx',
     ],
 
+
     theme: {
         extend: {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+            colors: {
+                'pastel-green': '#a8d5ba',
+                'light-pastel-yellow': '#f9f1a5',
+            },
         },
     },
+    //<div class="bg-pastel-green text-light-pastel-yellow"> ... </div>
 
     plugins: [forms],
 };

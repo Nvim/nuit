@@ -17,7 +17,10 @@ with open('intents.json', 'r') as f:
 all_words = []
 tags = []
 xy = []
+
+ecology_keywords = ["écologie", "rechauffement", "climatique"]
 # loop through each sentence in our intents patterns
+
 for intent in intents['intents']:
     tag = intent['tag']
     # add to tag list
@@ -28,8 +31,23 @@ for intent in intents['intents']:
         w = tokenize(pattern, language=detected_language)
         # add to our words list
         all_words.extend(w)
-        # add to xy pair
         xy.append((w, tag))
+
+'''
+for intent in intents['intents']:
+    for pattern in intent['patterns']:
+        detected_language = detect(pattern)
+        if any(word in tokenize(pattern, language=detected_language) for word in ecology_keywords):
+            all_words.extend(ecology_keywords)
+            tags.append(intent['tag'])
+            xy.append((ecology_keywords, intent['tag']))
+        else:
+            w = tokenize(pattern, language=detected_language) 
+            all_words.extend(w)
+            tags.append(intent['tag'])
+            xy.append((w, intent['tag']))
+'''
+
 
 # stem and lower each word
 ignore_words = ['?', '.', '!']
