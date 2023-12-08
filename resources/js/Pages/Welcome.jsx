@@ -18,7 +18,7 @@ const Home = () => {
         
 
         {/* Bouton pour accéder au quiz */}
-        <Link href="/chatbot">
+        <Link href="/bot">
           <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
             Discuter environnement avec EcoloGPT ! &#129302;
           </button>

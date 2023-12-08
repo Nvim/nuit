@@ -19,15 +19,15 @@ const Chat = () => {
 
         //Appeler la méthode chatbot du ChatBotController via Inertia
         Inertia.post('/chatbot', { message: userInput }, {
-            // onSuccess: (response) => {
-            //    // Ajouter la réponse du chatbot au tableau des messages
-            //     const newBotMessage = { id: messages.length + 1, text: response.data, sender: 'bot' };
-            //     setMessages(currentMessages => [...currentMessages, newBotMessage]);
-            //     console.log(response.data);
-            // },
-            // onError: (errors) => {
-            //      console.error('Erreur lors de l\'envoi du message au chatbot:', errors);
-            // }
+            onSuccess: (response) => {
+               // Ajouter la réponse du chatbot au tableau des messages
+                const newBotMessage = { id: messages.length + 1, text: response.data, sender: 'bot' };
+                setMessages(currentMessages => [...currentMessages, newBotMessage]);
+                console.log(response.data);
+            },
+            onError: (errors) => {
+                 console.error('Erreur lors de l\'envoi du message au chatbot:', errors);
+            }
         });
 
         // Effacer le champ de saisie
