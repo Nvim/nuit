@@ -39,4 +39,12 @@ Route::get('/quiz', function(){
     return Inertia::render('Quiz');
 });
 
+Route::get('/simulateur', function(){
+    return Inertia::render('simulateur');
+});
+
+Route::get('/Test', function(){
+    return Inertia::render('Test');
+});
+
 require __DIR__.'/auth.php';
