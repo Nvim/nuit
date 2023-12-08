@@ -1,9 +1,10 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
-use Illuminate\Foundation\Application;
-use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Foundation\Application;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ChatBotTestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,7 +45,9 @@ Route::get('/simulateur', function(){
     return Inertia::render('simulateur');
 });
 
-Route::get('/chatbot', function(){
+Route::post('/chatbot', [ChatBotTestController::class, 'chatbot2'] )->name('chatbot');
+
+Route::get('/bot', function () {
     return Inertia::render('ChatBot');
 });
 

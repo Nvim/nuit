@@ -1,25 +1,38 @@
 import React, { useState } from 'react';
 import NavBar from '@/Components/NavBar';
+import { Inertia } from '@inertiajs/inertia';
 
 const Chat = () => {
   const [messages, setMessages] = useState([]);
   const [inputValue, setInputValue] = useState('');
+    const [userInput, setUserInput] = useState('');
 
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    if (inputValue.trim() !== '') {
-      const newMessage = {
-        id: messages.length + 1,
-        text: inputValue,
-      };
-      setMessages([...messages, newMessage]);
-      setInputValue('');
-    }
-  };
+
+    const sendMessage = () => {
+        // Ajouter le message de l'utilisateur au tableau des messages
+        const newUserMessage = { id: messages.length, text: userInput, sender: 'user' };
+        setMessages([...messages, newUserMessage]);
+
+        //Appeler la méthode chatbot du ChatBotController via Inertia
+        Inertia.post('/chatbot', { message: userInput }, {
+            // onSuccess: (response) => {
+            //    // Ajouter la réponse du chatbot au tableau des messages
+            //     const newBotMessage = { id: messages.length + 1, text: response.data, sender: 'bot' };
+            //     setMessages(currentMessages => [...currentMessages, newBotMessage]);
+            //     console.log(response.data);
+            // },
+            // onError: (errors) => {
+            //      console.error('Erreur lors de l\'envoi du message au chatbot:', errors);
+            // }
+        });
+
+        // Effacer le champ de saisie
+        setUserInput('');
+    };
 
   return (
     <div >
@@ -60,9 +73,9 @@ const Chat = () => {
             padding: '8px',
             borderRadius: '5px',
             marginBottom: '5px',
-            textAlign: 'right',
+            textAlign: 'left',
             wordWrap: 'break-word',
-            display: 'inline-block', 
+            display: 'inline-block',
             maxWidth: '80%',
             float: 'right',
             clear: 'both',
@@ -72,7 +85,7 @@ const Chat = () => {
         </div>
           ))}
         </div>
-        <form
+        {/* <form
           onSubmit={handleSubmit}
           style={{
             width: '60%', // Largeur du chat
@@ -105,7 +118,9 @@ const Chat = () => {
           >
             Send
           </button>
-        </form>
+        </form> */}
+            <input type="text" value={userInput} onChange={e => setUserInput(e.target.value)} />
+            <button onClick={sendMessage}>Envoyer</button>
       </div>
       </div>
     </div>
