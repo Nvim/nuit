@@ -1,62 +1,55 @@
 import React, { useState } from 'react';
 
 const Quiz = () => {
-    const [answers, setAnswers] = useState({});
-    const [score, setScore] = useState(0);
-  
-    const handleSubmit = () => {
-      let newScore = 0;
-      // Logique pour calculer le score...
-      setScore(newScore);
-    };
-  
-    return (
-      <div className="quiz-container text-white">
-        <div className="question mb-4">
-          <h3 className="text-lg font-semibold">Question 1:</h3>
-          <div className="mt-2 space-y-2">
-            <button
-              onClick={() => setAnswers({ ...answers, q1: 'option1' })}
-              className={`w-full bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded`}
-            >
-              Option 1
-            </button>
-            <button
-              onClick={() => setAnswers({ ...answers, q1: 'option2' })}
-              className={`w-full bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded`}
-            >
-              Option 2
-            </button>
-            <button
-              onClick={() => setAnswers({ ...answers, q1: 'option3' })}
-              className={`w-full bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded`}
-            >
-              Option 3
-            </button>
-            <button
-              onClick={() => setAnswers({ ...answers, q1: 'option4' })}
-              className={`w-full bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded`}
-            >
-              Option 4
-            </button>
-            {/* Ajoutez d'autres options selon vos besoins */}
-          </div>
-        </div>
-  
+  const [answers, setAnswers] = useState({});
+  const [score, setScore] = useState(0);
+
+  const handleSubmit = () => {
+    let newScore = 0;
+    // Logique pour calculer le score...
+    setScore(newScore);
+  };
+
+  return (
+    <div className="relative quiz-container text-gray-800 flex flex-col items-center justify-center h-screen space-y-6 w-2/4 mx-auto">
+      <div className="flex items-center justify-between w-full">
+        <h3 className="text-xl font-semibold mb-2">Question 1:</h3>
+      </div>
+      <div className="flex flex-col space-y-3 w-full">
+        <button
+          onClick={() => setAnswers({ ...answers, q1: 'option1' })}
+          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
+        >
+          Option 1
+        </button>
+        <button
+          onClick={() => setAnswers({ ...answers, q1: 'option2' })}
+          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
+        >
+          Option 2
+        </button>
+        <button
+          onClick={() => setAnswers({ ...answers, q1: 'option3' })}
+          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
+        >
+          Option 3
+        </button>
+        <button
+          onClick={() => setAnswers({ ...answers, q1: 'option4' })}
+          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
+        >
+          Option 4
+        </button>
+        {/* Bouton "Submit" en dessous des autres boutons */}
         <button
           onClick={handleSubmit}
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline self-end "
         >
           Submit
         </button>
-  
-        {/* Affichage du score */}
-        {/* <div className="score mt-4">
-          <h3 className="text-lg font-semibold">Score: {score}</h3>
-        </div> */}
       </div>
-    );
-  };
-  
-  export default Quiz;
-  
+    </div>
+  );
+};
+
+export default Quiz;

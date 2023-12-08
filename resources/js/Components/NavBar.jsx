@@ -2,15 +2,34 @@ import { Link } from '@inertiajs/react';
 
 function EnhancedNavbar({ auth }) {
   return (
-    <nav className="bg-gray-100 p-4">
-      <div className="container mx-auto">
-        <div className="flex justify-between items-center">
-          <a href="#home" className="text-xl font-bold text-gray-800"></a>
-          
-          
-        </div>
-      </div>
+    <div className="bg-light-pastel-yellow text-black py-4">
+  <div className="container mx-auto px-4">
+    <nav className="flex justify-between items-center">
+      <div className="text-2xl font-bold">ECOLO</div>
+      <ul className="flex space-x-4">
+        <li>
+          <a href="/" className="hover:text-purple-900">Accueil</a>
+        </li>
+        <li>
+        <Link
+                href={route('login')}
+                className="hover:text-gray-300 hover:text-purple-900"
+              >
+                Log in
+              </Link>
+        </li>
+        <li>
+        <Link
+                href={route('register')}
+                className="hover:text-gray-300 hover:text-purple-900"
+              >
+                Register
+              </Link>
+        </li>
+      </ul>
     </nav>
+  </div>
+</div>
   );
 }
 
