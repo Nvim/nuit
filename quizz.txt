@@ -1,0 +1,75 @@
+* Combien de mails sont stockés dans votre boite mail?
+[ 'moins de 500' / 'moins de 5000' / 'moins de 10000' / 'plus de 10000']
+-> Un français reçoit en moyenne 936 newletters par an, soit 9kg de CO2
+
+* Laissez-vous vos appareils charger toute la nuit?
+['Toujours' / 'De Temps en temps' / 'Jamais']
+-> Un chargeur représente une puissance moyenne de 2,24 watts quand il reste branché sur secteur alors que la batterie est pleine. En plus de ça, votre batterie se dégrade plus vite et devra être remplacée plus tot.
+
+* Votre box internet est-elle active 24h/24 ?
+['Oui' / 'Non']
+-> A l'année votre box Internet consomme jusqu'à 300kwh, soit + qu'un refrigirateur.
+
+* Restez-vous en 5G lorsque vous êtes chez vous?
+['Toujours' / 'Rarement' / 'Jamais']
+-> A volume égal, un utilisateur de réseau 4G en France consomme environ 50 kWh par an, soit 10 fois plus qu’avec la fibre optique.
+
+* Utilisez-vous un moteur de recherche pour chercher des sites auxquels vous accédez tous les jours?
+['Toujours' / 'Souvent' / 'Jamais']
+-> Une recherche Google consomme 4 fois plus que juste accéder à l'URL. Utilisez des favoris!
+
+* Avez-vous téléchargé votre playlist de musique ?
+['Oui' / 'Non']
+-> En téléchargeant votre playlist, vous évitez de la streamer tous les jours. Cela représente des éconoies significatives de bande passante et de batterie.
+
+* Eteignez-vous vos multiprises la nuit?
+['Toujours' / 'Rarement' / 'Jamais']
+-> C'est jusqu'a 10% d'économies.
+
+* Utilisez-vous des ampoules LED ou des ampoules classiques ?
+['Que des LED' / 'Un peu des deux' / 'Que des classiques']
+-> La consommation des ampoules LED est plus basse. Vous économiserez 30e par an pour 10 ampoules
+
+* A quelle température avez-vous réglé votre chauffe-eau ?
+['Moins de 60°' / 'Entre 60 et 80°' / 'Plus de 80°']
+-> Réglez-le entre 55 et 60, c'est 30% de consommation de moins qu'a 80
+
+* Pensez-vous a éteindre les lumières derrière vous?
+['Jamais' / 'Souvent' / 'Toujours']
+-> Vous pouvez économiser jusqu'à 10% d'énergie
+
+* Laissez-vous couler l'eau du robinet pendant que vous vous brossez les dents ?
+['Jamais' / 'Souvent' / 'Toujours']
+-> En laisant l'eau couler, vous gaspillez jusqu'a 100 litres. Cela correspond à plus 25e de facture d'eau par an.
+
+* A quelle fréquence prenez vous des bains?
+['Plus d'un par semaine' / 'Un par mois' / 'Un tous les 6 mois' / 'Moins d'un par an']
+-> Un bain consomme autant d'eau que 4 à 5 douches. C'est donc 4 à 5 fois plus d'eau à chauffer.
+
+* Triez vous vos déchets ?
+['Jamais' / 'En partie' / 'Toujours']
+-> Le tri des déchets favorise le recylage, et limite le nombre de déchets envoyés à la décharge.
+
+* A quelle fréquence remplacez-vous vos smartphones/ordinateurs/tablettes ?
+['Tous les ans' / 'Tous les 2 ans' / '3 à 5 ans' / 'Plus de 5 ans']
+-> Seulement 29,4% du e-waste produit dans le monde a été collecté et recyclé en 2019. La plupart fini déversé dans la nature et les océans. La première année d'un smartphone émet 85kg de CO2, en majorité dus à la production de ce dernier.
+
+* Prenez-vous souvent la voiture pour des petits trajets?
+['Toujours' / 'Souvent' / 'Rarement' / 'Jamais']
+-> Les trajets de moins de 5km représentent 10% de la distance parcourue en France. Les premiers km de la voiture polluent le plus.
+
+* Partez-vous souvent en vacances dans d'autres continents ?
+['Souvent (Plus d'une fois par an)' / 'Rarement (Moins d'une fois par an)' / 'Jamais']
+-> Les vols en avion polluent énormément. Un aller-retour au Mexique émet 2.4 tonnes de CO2, soit 1/3 de l'empreinte carbonne annuelle moyenne d'un français.
+
+* Utilisez-vous un lave-vaiselle?
+['Oui' / 'Non']
+-> La vaiselle à la main gaspille plus d'eau que le lave-vaiselle
+
+* A quelle fréquence consommez-vous de la viande?
+['Jamais' / 'Une fois par semaine' / 'Au moins 3 fois par semaine' / 'Tous les jours']
+-> En france, 22% de nos emissions de co2 proviennent de notre alimentation. La viande en représente 30%.
+
+* A quelle fréquence consommez-vous des produits laitiers?
+['Jamais' / 'Une fois par semaine' / 'Au moins 3 fois par semaine' / 'Tous les jours']
+-> En france, 22% de nos emissions de co2 proviennent de notre alimentation.Les produits laitiers en représentent 48%.
