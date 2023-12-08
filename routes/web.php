@@ -39,6 +39,11 @@ Route::get('/quiz', function(){
     return Inertia::render('Quiz');
 });
 
+
+Route::get('/simulateur', function(){
+    return Inertia::render('simulateur');
+});
+
 Route::get('/chatbot', function(){
     return Inertia::render('ChatBot');
 });
