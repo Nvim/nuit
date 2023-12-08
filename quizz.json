@@ -1,0 +1,334 @@
+[
+    {
+        "question": "Combien de mails sont stockés dans votre boite mail?",
+        "answer": "Un français reçoit en moyenne 936 newletters par an, soit 9kg de CO2",
+        "options": [
+            {
+                "text": "moins de 500",
+                "score": 3
+            },
+            {
+                "text": "moins de 5000",
+                "score": 2
+            },
+            {
+                "text": "moins de 10000",
+                "score": 1
+            },
+            {
+                "text": "plus de 10000",
+                "score": 0
+            }
+        ]
+    },
+    {
+        "question": "Laissez-vous vos appareils charger toute la nuit?",
+        "answer": "Un chargeur représente une puissance moyenne de 2,24 watts quand il reste branché sur secteur alors que la batterie est pleine. En plus de ça, votre batterie se dégrade plus vite et devra être remplacée plus tot.",
+        "options": [
+            {
+                "text": "Toujours",
+                "score": 0
+            },
+            {
+                "text": "De Temps en temps",
+                "score": 1
+            },
+            {
+                "text": "Jamais",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "question": "Votre box internet est-elle active 24h/24 ?",
+        "answer": "A l'année votre box Internet consomme jusqu'à 300kwh, soit + qu'un refrigirateur.",
+        "options": [
+            {
+                "text": "Oui",
+                "score": 0
+            },
+            {
+                "text": "Non",
+                "score": 2
+            }
+        ]
+    },
+    {
+        "question": "Restez-vous en 5G lorsque vous êtes chez vous?",
+        "answer": "A volume égal, un utilisateur de réseau 4G en France consomme environ 50 kWh par an, soit 10 fois plus qu’avec la fibre optique.",
+        "options": [
+            {
+                "text": "Toujours",
+                "score": 0
+            },
+            {
+                "text": "Rarement",
+                "score": 1
+            },
+            {
+                "text": "Jamais",
+                "score": 3
+            }
+        ]
+    },
+    {
+        "question": "Utilisez-vous un moteur de recherche pour chercher des sites auxquels vous accédez tous les jours?",
+        "answer": "Une recherche Google consomme 4 fois plus que juste accéder à l'URL. Utilisez des favoris!",
+        "options": [
+            {
+                "text": "Toujours",
+                "score": 0
+            },
+            {
+                "text": "Souvent",
+                "score": 1
+            },
+            {
+                "text": "Jamais",
+                "score": 3
+            }
+        ]
+    },
+    {
+        "question": "Avez-vous téléchargé votre playlist de musique ?",
+        "answer": "En téléchargeant votre playlist, vous évitez de la streamer tous les jours. Cela représente des éconoies significatives de bande passante et de batterie.",
+        "options": [
+            {
+                "text": "Oui",
+                "score": 2
+            },
+            {
+                "text": "Non",
+                "score": 0
+            }
+        ]
+    },
+    {
+        "question": "Eteignez-vous vos multiprises la nuit?",
+        "answer": "C'est jusqu'a 10% d'économies.",
+        "options": [
+            {
+                "text": "Toujours",
+                "score": 3
+            },
+            {
+                "text": "Rarement",
+                "score": 1
+            },
+            {
+                "text": "Jamais",
+                "score": 0
+            }
+        ]
+    },
+    {
+        "question": "Utilisez-vous des ampoules LED ou des ampoules classiques ?",
+        "answer": "La consommation des ampoules LED est plus basse. Vous économiserez 30e par an pour 10 ampoules",
+        "options": [
+            {
+                "text": "Que des LED",
+                "score": 3
+            },
+            {
+                "text": "Un peu des deux",
+                "score": 1
+            },
+            {
+                "text": "Que des classiques",
+                "score": 0
+            }
+        ]
+    },
+    {
+        "question": "A quelle température avez-vous réglé votre chauffe-eau ?",
+        "answer": "Réglez-le entre 55 et 60, c'est 30% de consommation de moins qu'a 80",
+        "options": [
+            {
+                "text": "Moins de 60°",
+                "score": 3
+            },
+            {
+                "text": "Entre 60 et 80°",
+                "score": 1
+            },
+            {
+                "text": "Plus de 80°",
+                "score": 0
+            }
+        ]
+    },
+    {
+        "question": "Pensez-vous a éteindre les lumières derrière vous?",
+        "answer": "Vous pouvez économiser jusqu'à 10% d'énergie",
+        "options": [
+            {
+                "text": "Jamais",
+                "score": 0
+            },
+            {
+                "text": "Souvent",
+                "score": 1
+            },
+            {
+                "text": "Toujours",
+                "score": 3
+            }
+        ]
+    },
+    {
+        "question": "Laissez-vous couler l'eau du robinet pendant que vous vous brossez les dents ?",
+        "answer": "En laisant l'eau couler, vous gaspillez jusqu'a 100 litres. Cela correspond à plus 25e de facture d'eau par an.",
+        "options": [
+            {
+                "text": "Jamais",
+                "score": 0
+            },
+            {
+                "text": "Souvent",
+                "score": 1
+            },
+            {
+                "text": "Toujours",
+                "score": 3
+            }
+        ]
+    },
+    {
+        "question": "A quelle fréquence prenez vous des bains?",
+        "answer": "Un bain consomme autant d'eau que 4 à 5 douches. C'est donc 4 à 5 fois plus d'eau à chauffer.",
+        "options": [
+            {
+                "text": "Plus d'un par semaine",
+                "score": 0
+            },
+            {
+                "text": "Un par mois",
+                "score": 1
+            },
+            {
+                "text": "Un tous les 6 mois",
+                "score": 2
+            },
+            {
+                "text": "Moins d'un par an",
+                "score": 3
+            }
+        ]
+    },
+    {
+        "question": "Triez vous vos déchets ?",
+        "answer": "Le tri des déchets favorise le recylage, et limite le nombre de déchets envoyés à la décharge.",
+        "options": [
+            {
+                "text": "Jamais",
+                "score": 0
+            },
+            {
+                "text": "En partie",
+                "score": 1
+            },
+            {
+                "text": "Toujours",
+                "score": 3
+            }
+        ]
+    },
+    {
+        "question": "A quelle fréquence remplacez-vous vos smartphones/ordinateurs/tablettes ?",
+        "answer": "Seulement 29,4% du e-waste produit dans le monde a été collecté et recyclé en 2019. La plupart fini déversé dans la nature et les océans. La première année d'un smartphone émet 85kg de CO2, en majorité dus à la production de ce dernier.",
+        "options": [
+            {
+                "text": "Tous les ans",
+                "score": 0
+            },
+            {
+                "text": "Tous les 2 ans",
+                "score": 1
+            },
+            {
+                "text": "3 à 5 ans",
+                "score": 2
+            },
+            {
+                "text": "Plus de 5 ans",
+                "score": 3
+            }
+        ]
+    },
+    {
+        "question": "Prenez-vous souvent la voiture pour des petits trajets?",
+        "answer": "Les trajets de moins de 5km représentent 10% de la distance parcourue en France. Les premiers km de la voiture polluent le plus.",
+        "options": [
+            {
+                "text": "Toujours",
+                "score": 0
+            },
+            {
+                "text": "Souvent",
+                "score": 1
+            },
+            {
+                "text": "Rarement",
+                "score": 2
+            },
+            {
+                "text": "Jamais",
+                "score": 3
+            }
+        ]
+    },
+    {
+        "question": "Partez-vous souvent en vacances dans d'autres continents ?",
+        "answer": "Les vols en avion polluent énormément. Un aller-retour au Mexique émet 2.4 tonnes de CO2, soit 1/3 de l'empreinte carbonne annuelle moyenne d'un français.",
+        "options": [
+            {
+                "text": "Souvent (Plus d'une fois par an)",
+                "score": 0
+            },
+            {
+                "text": "Rarement (Moins d'une fois par an)",
+                "score": 1
+            },
+            {
+                "text": "Jamais",
+                "score": 3
+            }
+        ]
+    },
+    {
+        "question": "Utilisez-vous un lave-vaiselle?",
+        "answer": "La vaiselle à la main gaspille plus d'eau que le lave-vaiselle",
+        "options": [
+            {
+                "text": "Oui",
+                "score": 1
+            },
+            {
+                "text": "Non",
+                "score": 0
+            }
+        ]
+    },
+    {
+        "question": "A quelle fréquence consommez-vous de la viande?",
+        "answer": "En france, 22% de nos emissions de co2 proviennent de notre alimentation. La viande en représente 30%.",
+        "options": [
+            {
+                "text": "Jamais",
+                "score": 4
+            },
+            {
+                "text": "Une fois par semaine",
+                "score": 3
+            },
+            {
+                "text": "Au moins 3 fois par semaine",
+                "score": 1
+            },
+            {
+                "text": "Tous les jours",
+                "score": 0
+            }
+        ]
+    }
+]
