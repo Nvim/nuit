@@ -42,6 +42,7 @@ const Chat = () => {
       >
         <div
           style={{
+            backgroundColor: 'white',
             height: '300px',
             width: '60%', // Largeur du chat
             border: '1px solid #ccc',
@@ -51,17 +52,24 @@ const Chat = () => {
           }}
         >
           {messages.map((message) => (
-            <div
-              key={message.id}
-              style={{
-                backgroundColor: 'white',
-                padding: '8px',
-                borderRadius: '5px',
-                marginBottom: '5px',
-              }}
-            >
-              {message.text}
-            </div>
+          <div
+          key={message.id}
+          style={{
+
+            backgroundColor: '#f9f1a5',
+            padding: '8px',
+            borderRadius: '5px',
+            marginBottom: '5px',
+            textAlign: 'right',
+            wordWrap: 'break-word',
+            display: 'inline-block', 
+            maxWidth: '80%',
+            float: 'right',
+            clear: 'both',
+          }}
+        >
+          {message.text}
+        </div>
           ))}
         </div>
         <form

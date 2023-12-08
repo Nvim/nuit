@@ -17,7 +17,7 @@ const Home = () => {
         {/* Section du chatbot */}
         <div className="mb-8">
           <h2>Chatbot Section</h2>
-          <p>Ici se trouverait le chatbot.</p>
+          <p>Ici se trouverait le chatbotscq d  d cvcv cv vc v.</p>
           {/* Insérez votre composant de chatbot ici */}
           {/* Exemple : */}
           {/* <Chatbot /> */}
@@ -27,6 +27,13 @@ const Home = () => {
         <Link href="/quiz">
           <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
             Quiz
+          </button>
+        </Link>
+        <br />
+        <br />
+        <Link href="/chatbot">
+          <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+            Chatbot
           </button>
         </Link>
       </div>

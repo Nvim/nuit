@@ -43,4 +43,5 @@ Route::get('/chatbot', function(){
     return Inertia::render('ChatBot');
 });
 
+
 require __DIR__.'/auth.php';
