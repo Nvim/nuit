@@ -39,4 +39,8 @@ Route::get('/quiz', function(){
     return Inertia::render('Quiz');
 });
 
+Route::get('/chatbot', function(){
+    return Inertia::render('ChatBot');
+});
+
 require __DIR__.'/auth.php';
