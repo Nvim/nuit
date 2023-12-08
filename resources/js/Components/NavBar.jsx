@@ -5,7 +5,7 @@ function EnhancedNavbar({ auth }) {
     <div className="bg-light-pastel-yellow text-black py-4">
   <div className="container mx-auto px-4">
     <nav className="flex justify-between items-center">
-      <div className="text-2xl font-bold">ECOLO</div>
+      <div className="text-2xl font-bold">ECOLO &#127795;</div>
       <ul className="flex space-x-4">
         <li>
           <a href="/" className="hover:text-purple-900">Accueil</a>

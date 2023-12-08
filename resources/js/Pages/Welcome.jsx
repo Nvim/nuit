@@ -15,25 +15,26 @@ const Home = () => {
       </style>
       <div className="container mx-auto mt-8">
         {/* Section du chatbot */}
-        <div className="mb-8">
-          <h2>Chatbot Section</h2>
-          <p>Ici se trouverait le chatbotscq d  d cvcv cv vc v.</p>
-          {/* Insérez votre composant de chatbot ici */}
-          {/* Exemple : */}
-          {/* <Chatbot /> */}
-        </div>
+        
 
         {/* Bouton pour accéder au quiz */}
-        <Link href="/quiz">
+        <Link href="/chatbot">
           <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-            Quiz
+            Discuter environnement avec EcoloGPT ! &#129302;
           </button>
         </Link>
         <br />
         <br />
-        <Link href="/chatbot">
+        <Link href="/simulateur">
           <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-            Chatbot
+            Utilisez notre super simulateur d'empreinte carbone &#128640;
+          </button>
+        </Link>
+        <br />
+        <br />
+        <Link href="/giec">
+          <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+            C'est quoi le GIEC ? &#129299;
           </button>
         </Link>
       </div>

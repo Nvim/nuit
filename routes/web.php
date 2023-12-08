@@ -48,5 +48,9 @@ Route::get('/chatbot', function(){
     return Inertia::render('ChatBot');
 });
 
+Route::get('/giec', function(){
+    return Inertia::render('giec');
+});
+
 
 require __DIR__.'/auth.php';
